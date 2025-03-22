@@ -16,7 +16,7 @@ const port = process.env.PORT || 5000
 //         credentials:true
 //     }))
 app.use(cors({
-    origin: 'https://quiz-quest-latest-git-main-md-nadeems-projects.vercel.app/', // Replace with your frontend's URL
+    origin: 'https://quiz-quest-latest.vercel.app', // Replace with your frontend's URL
     methods: ['GET', 'POST', 'PUT', 'DELETE'],
     allowedHeaders: ['Content-Type', 'Authorization']
   }));
