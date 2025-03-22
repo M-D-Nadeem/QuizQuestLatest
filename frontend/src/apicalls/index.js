@@ -1,7 +1,7 @@
 import axios from 'axios'
 
 const axiosInstance = axios.create({
-    baseURL: 'http://localhost:6001/',
+    baseURL: 'https://quiz-quest-latest-backend-git-main-md-nadeems-projects.vercel.app/',
     headers: {
        'authorization': `Bearer ${localStorage.getItem('token')}`
     }
