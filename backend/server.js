@@ -26,6 +26,9 @@ app.use(cors({
 
 
 app.use("/api/users",userRoute)
+app.use("/ping",(req,res)=>{
+  res.send("PONG")
+})
 app.use("/api/exams",examRoute)
 app.use("/api/reports",reportRoute)
 
