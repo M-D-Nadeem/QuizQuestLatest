@@ -1,5 +1,5 @@
 import axios from 'axios'
-console.log(process.env.REACT_APP_VITE_BASE_URL);
+console.log(process.env.REACT_APP_BASE_URL);
 const axiosInstance = axios.create({
     // baseURL: 'https://quiz-quest-latest-backend.vercel.app/',
     
