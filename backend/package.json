@@ -11,16 +11,25 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@huggingface/transformers": "^3.5.0",
+    "@langchain/community": "^0.3.41",
+    "@langchain/core": "^0.3.48",
+    "@langchain/ollama": "^0.2.0",
     "axios": "^1.7.8",
     "bcryptjs": "^2.4.3",
     "cookie-parser": "^1.4.6",
     "cors": "^2.8.5",
+    "d3-dsv": "^2.0.0",
     "dotenv": "^16.0.3",
     "express": "^4.18.2",
     "googleapis": "^144.0.0",
     "jsonwebtoken": "^9.0.0",
+    "mammoth": "^1.9.0",
     "mongoose": "^6.6.4",
     "nodemon": "^2.0.20",
-    "socket.io": "^4.7.5"
+    "officeparser": "^4.2.0",
+    "pdf-parse": "^1.1.1",
+    "socket.io": "^4.7.5",
+    "word-extractor": "^1.0.4"
   }
 }

@@ -16,7 +16,8 @@ const port = process.env.PORT || 5000
 //         credentials:true
 //     }))
 app.use(cors({
-    origin: 'https://quiz-quest-latest.vercel.app', // Replace with your frontend's URL
+    // origin: 'https://quiz-quest-latest.vercel.app', 
+    origin: process.env.CLIENT_URL, 
     methods: ['GET', 'POST', 'PUT', 'DELETE'],
     allowedHeaders: ['Content-Type', 'Authorization']
   }));
@@ -31,6 +32,7 @@ app.use("/ping",(req,res)=>{
 })
 app.use("/api/exams",examRoute)
 app.use("/api/reports",reportRoute)
+
 
 
 app.use(express.urlencoded({ extended: true }))

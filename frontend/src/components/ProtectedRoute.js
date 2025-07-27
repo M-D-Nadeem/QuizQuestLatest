@@ -35,12 +35,12 @@ function ProtectedRoute({children}) {
       icon:<RiRobot3Fill />,
       onClick: ()=>navigate("/quiz/ai")
     },
-    {
-      title:"Discussion section",
-      paths:["/chat"],
-      icon:<CiChat1 />,
-      onClick: ()=>navigate("/chat")
-    },
+    // {
+    //   title:"Discussion section",
+    //   paths:["/chat"],
+    //   icon:<CiChat1 />,
+    //   onClick: ()=>navigate("/chat")
+    // },
     // {
     //   title: "Profile",
     //   paths: ["/profile"],

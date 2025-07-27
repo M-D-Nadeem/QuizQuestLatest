@@ -44,6 +44,7 @@ function Settings() {
   const handleAmountChange = (event) => {
     dispatch({ type: "CHANGE_AMOUNT", amount_of_questions: event.target.value });
   };
+   console.log("Selected Difficulty:", questionDifficulty);
 
   if (!loading) {
     return (
@@ -51,7 +52,7 @@ function Settings() {
         <h1 className="text-4xl font-bold mb-6 text-blue-600 animate-pulse">Quiz App</h1>
         <div className="mb-4">
           <h2 className="text-2xl font-semibold mb-2">Select Category:</h2>
-          <select value={questionCategory} onChange={handleCategoryChange} className="p-2 border rounded">
+          <select value={questionCategory} onChange={handleCategoryChange} >
             <option>All</option>
             {options && options.length && options.map((option) => (
               <option value={option.id} key={option.id}>{option.name}</option>
@@ -60,7 +61,7 @@ function Settings() {
         </div>
         <div className="mb-4">
           <h2 className="text-2xl font-semibold mb-2">Select Difficulty:</h2>
-          <select value={questionDifficulty} onChange={handleDifficultyChange} className="p-2 border rounded">
+          <select value={questionDifficulty} onChange={handleDifficultyChange} >
             <option value="all" key="difficulty-0">All</option>
             <option value="easy" key="difficulty-1">Easy</option>
             <option value="medium" key="difficulty-2">Medium</option>
@@ -69,7 +70,7 @@ function Settings() {
         </div>
         <div className="mb-4">
           <h2 className="text-2xl font-semibold mb-2">Select Question Type:</h2>
-          <select value={questionType} onChange={handleTypeChange} className="p-2 border rounded">
+          <select value={questionType} onChange={handleTypeChange} >
             <option value="" key="type-0">All</option>
             <option value="multiple" key="type-1">Multiple Choice</option>
             <option value="boolean" key="type-2">True/False</option>

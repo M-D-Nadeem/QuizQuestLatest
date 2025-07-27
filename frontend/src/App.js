@@ -123,14 +123,14 @@ function App() {
               </ProtectedRoute>
             }
           />
-          <Route
+          {/* <Route
             path="/chat"
             element={
               <ProtectedRoute>
                 <ChatContainer />
               </ProtectedRoute>
             }
-          />
+          /> */}
           <Route 
           path="*"
           element={
