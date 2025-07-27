@@ -17,7 +17,7 @@ const port = process.env.PORT || 5000
 //     }))
 app.use(cors({
     // origin: 'https://quiz-quest-latest.vercel.app', 
-    origin: "https://quiz-quest-latest.vercel.app", 
+    origin: process.env.CLIENT_URL, 
     methods: ['GET', 'POST', 'PUT', 'DELETE'],
     allowedHeaders: ['Content-Type', 'Authorization']
   }));
